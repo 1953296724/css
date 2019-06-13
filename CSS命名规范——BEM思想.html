@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://www.cnblogs.com/dujishi/p/5862911.html -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="never">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <title>CSS命名规范——BEM思想（非常赞的规范） - 小草露露 - 博客园</title>
+    <meta property="og:description" content="人们问我最多的问题之一是在CSS类名中“--”和“__”是什么意思？它们的出现是源于BEM和Nicolas Gallagher... BEM的意思就是块（block）、元素（element）、修饰符（">
+    <link type="text/css" rel="stylesheet" href="./CSS命名规范——BEM思想_files/blog-common.css">
+<link id="MainCss" type="text/css" rel="stylesheet" href="./CSS命名规范——BEM思想_files/bundle-CodingLife.css">
+<link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="./CSS命名规范——BEM思想_files/bundle-CodingLife-mobile.css">
+    <link title="RSS" type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/dujishi/rss">
+    <link title="RSD" type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/dujishi/rsd.xml">
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/dujishi/wlwmanifest.xml">
+    <script src="./CSS命名规范——BEM思想_files/amp4ads-host-v0.js.下载"></script><script src="./CSS命名规范——BEM思想_files/pubads_impl_rendering_2019061101.js.下载"></script><script async="" src="./CSS命名规范——BEM思想_files/analytics.js.下载"></script><script src="./CSS命名规范——BEM思想_files/jquery-2.2.0.min.js.下载"></script>
+    <script>var currentBlogId=292743;var currentBlogApp='dujishi',cb_enable_mathjax=false;var isLogined=false;</script>
+    <script src="./CSS命名规范——BEM思想_files/blog-common.js.下载" type="text/javascript"></script>
+<link rel="preload" href="./CSS命名规范——BEM思想_files/integrator.js.下载" as="script"><script type="text/javascript" src="./CSS命名规范——BEM思想_files/integrator.js.下载"></script><script src="./CSS命名规范——BEM思想_files/pubads_impl_2019061101.js.下载" async=""></script><style id="tsbrowser_video_independent_player_style" type="text/css">
+      [tsbrowser_force_max_size] {
+        width: 100% !important;
+        height: 100% !important;
+        left: 0px !important;
+        top: 0px !important;
+        margin: 0px !important;
+        padding: 0px !important;
+      }
+      [tsbrowser_force_fixed] {
+        position: fixed !important;
+        z-index: 9999 !important;
+        background: black !important;
+      }
+      [tsbrowser_force_hidden] {
+        opacity: 0 !important;
+        z-index: 0 !important;
+      }
+      [tsbrowser_hide_scrollbar] {
+        overflow: hidden !important;
+      }</style></head>
+<body>
+<a name="top"></a>
+
+
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a id="lnkBlogLogo" href="https://www.cnblogs.com/dujishi/"><img id="blogLogo" src="./CSS命名规范——BEM思想_files/logo.gif" alt="返回主页"></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="https://www.cnblogs.com/dujishi/">Mr.Du 技术分享</a></h1>
+<h2></h2>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">博客园</a></li>
+<li><a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/dujishi/">首页</a></li>
+<li><a id="blog_nav_newpost" class="menu" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a></li>
+<li><a id="blog_nav_contact" class="menu" rel="nofollow" href="https://msg.cnblogs.com/send/%E5%B0%8F%E8%8D%89%E9%9C%B2%E9%9C%B2">联系</a></li>
+<li><a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/dujishi/rss">订阅</a>
+<!--<a id="blog_nav_rss_image" class="aHeaderXML" href="https://www.cnblogs.com/dujishi/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a>--></li>
+<li><a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a></li>
+</ul>
+		<div class="blogStats">
+			
+			<div id="blog_stats">
+<span id="stats_post_count">随笔 - 25&nbsp; </span>
+<span id="stats_article_count">文章 - 0&nbsp; </span>
+<span id="stats-comment_count">评论 - 3</span>
+</div>
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+        <div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class="post">
+		<h1 class="postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/dujishi/p/5862911.html">CSS命名规范——BEM思想（非常赞的规范）</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body" class="blogpost-body"><p>人们问我最多的问题之一是在CSS类名中“--”和“__”是什么意思？它们的出现是源于<a href="http://bem.info/" target="_blank">BEM</a>和<a href="http://twitter.com/necolas" target="_blank">Nicolas Gallagher</a>...</p>
+<p>BEM的意思就是块（block）、元素（element）、修饰符（modifier）,是由<a href="http://yandex.ru/" target="_blank">Yandex</a>团队提出的一种前端命名方法论。这种巧妙的命名方法让你的CSS类对其他开发者来说更加透明而且更有意义。BEM命名约定更加严格，而且包含更多的信息，它们用于一个团队开发一个耗时的大项目。</p>
+<p>重要的是要注意，我使用的基于BEM的命名方式是经过<a href="http://nicolasgallagher.com/about-html-semantics-front-end-architecture" target="_blank">Nicolas Gallagher修改过的</a>。这篇文章中介绍的这种命名技术并不是原始的BEM，但却是一个我更喜欢的改进版。无论实际使用了什么样的符号，它们其实都是基于同样的BEM原则。</p>
+<p>命名约定的模式如下：</p>
+<p>&nbsp;</p>
+<div class="dp-highlighter bg_css">
+<div class="bar">
+<div class="tools"><strong>[css]</strong>&nbsp;<a class="ViewSource" title="view plain" href="http://blog.csdn.net/chenmoquan/article/details/17095465#">view plain</a><span data-mod="popu_168"><span data-mod="popu_168">&nbsp;<a class="CopyToClipboard" title="copy" href="http://blog.csdn.net/chenmoquan/article/details/17095465#">copy</a></span></span>
+<div>&nbsp;</div>
+<span data-mod="popu_168"><span data-mod="popu_169">&nbsp;<span class="tracking-ad" data-mod="popu_167"><a title="在CODE上查看代码片" href="https://code.csdn.net/snippets/94148" target="_blank"><img src="./CSS命名规范——BEM思想_files/CODE_ico.png" alt="在CODE上查看代码片" width="12" height="12"></a><span class="tracking-ad" data-mod="popu_170"><a title="派生到我的代码片" href="https://code.csdn.net/snippets/94148/fork" target="_blank"><img src="./CSS命名规范——BEM思想_files/ico_fork.svg" alt="派生到我的代码片" width="12" height="12"></a></span></span></span></span></div>
+</div>
+<ol class="dp-css" start="1">
+<li class="alt">.<span class="value">block{}&nbsp;&nbsp;</span></li>
+<li>.block__element{}&nbsp;&nbsp;</li>
+<li class="alt">.block--modifier{}&nbsp;&nbsp;</li>
+</ol></div>
+<p>&nbsp;</p>
+<ul>
+<li>.block 代表了更高级别的抽象或组件。</li>
+<li>.block__element 代表.block的后代，用于形成一个完整的.block的整体。</li>
+<li>.block--modifier代表.block的不同状态或不同版本。</li>
+</ul>
+<p>之所以使用两个连字符和下划线而不是一个，是为了让你自己的块可以用单个连字符来界定，如：</p>
+<p>&nbsp;</p>
+<div class="dp-highlighter bg_css">
+<div class="bar">
+<div class="tools"><strong>[css]</strong>&nbsp;<a class="ViewSource" title="view plain" href="http://blog.csdn.net/chenmoquan/article/details/17095465#">view plain</a><span data-mod="popu_168"><span data-mod="popu_168">&nbsp;<a class="CopyToClipboard" title="copy" href="http://blog.csdn.net/chenmoquan/article/details/17095465#">copy</a></span></span>
+<div>&nbsp;</div>
+<span data-mod="popu_168"><span data-mod="popu_169">&nbsp;<span class="tracking-ad" data-mod="popu_167"><a title="在CODE上查看代码片" href="https://code.csdn.net/snippets/94148" target="_blank"><img src="./CSS命名规范——BEM思想_files/CODE_ico.png" alt="在CODE上查看代码片" width="12" height="12"></a><span class="tracking-ad" data-mod="popu_170"><a title="派生到我的代码片" href="https://code.csdn.net/snippets/94148/fork" target="_blank"><img src="./CSS命名规范——BEM思想_files/ico_fork.svg" alt="派生到我的代码片" width="12" height="12"></a></span></span></span></span></div>
+</div>
+<ol class="dp-css" start="1">
+<li class="alt">.site-search{}&nbsp;<span class="comment">/*&nbsp;块&nbsp;*/&nbsp;&nbsp;</span></li>
+<li>.site-search__field{}&nbsp;<span class="comment">/*&nbsp;元素&nbsp;*/&nbsp;&nbsp;</span></li>
+<li class="alt">.site-search--full{}&nbsp;<span class="comment">/*&nbsp;修饰符&nbsp;*/&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+</ol></div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>BEM的关键是光凭名字就可以告诉其他开发者某个标记是用来干什么的。通过浏览HTML代码中的class属性，你就能够明白模块之间是如何关联的：有一些仅仅是组件，有一些则是这些组件的子孙或者是元素,还有一些是组件的其他形态或者是修饰符。我们用一个类比/模型来思考一下下面的这些元素是怎么关联的：</p>
+<p>&nbsp;</p>
+<div class="dp-highlighter bg_css">
+<div class="bar">
+<div class="tools"><strong>[css]</strong>&nbsp;<a class="ViewSource" title="view plain" href="http://blog.csdn.net/chenmoquan/article/details/17095465#">view plain</a><span data-mod="popu_168"><span data-mod="popu_168">&nbsp;<a class="CopyToClipboard" title="copy" href="http://blog.csdn.net/chenmoquan/article/details/17095465#">copy</a></span></span>
+<div>&nbsp;</div>
+
+<span data-mod="popu_168"><span data-mod="popu_169">&nbsp;<span class="tracking-ad" data-mod="popu_167"><a title="在CODE上查看代码片" href="https://code.csdn.net/snippets/94148" target="_blank"><img src="./CSS命名规范——BEM思想_files/CODE_ico.png" alt="在CODE上查看代码片" width="12" height="12"></a><span class="tracking-ad" data-mod="popu_170"><a title="派生到我的代码片" href="https://code.csdn.net/snippets/94148/fork" target="_blank"><img src="./CSS命名规范——BEM思想_files/ico_fork.svg" alt="派生到我的代码片" width="12" height="12"></a></span></span></span></span></div>
+
+</div>
+<ol class="dp-css" start="1">
+<li class="alt">.person{}&nbsp;&nbsp;</li>
+<li>.person__hand{}&nbsp;&nbsp;</li>
+<li class="alt">.person--female{}&nbsp;&nbsp;</li>
+<li>.person--female__hand{}&nbsp;&nbsp;</li>
+<li class="alt">.person__hand--<span class="value">left{}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+
+</ol>
+<div>&nbsp;</div>
+
+</div>
+<p>
+<br><br></p>
+<p>&nbsp;</p>
+<p>顶级块是‘person’，它拥有一些元素，如‘hand’。一个人也会有其他形态，比如女性，这种形态进而也会拥有它自己的元素。下面我们把他们写成‘常规’CSS:</p>
+<p>&nbsp;</p>
+<div class="dp-highlighter bg_css">
+<div class="bar">
+<div class="tools"><strong>[css]</strong>&nbsp;<a class="ViewSource" title="view plain" href="http://blog.csdn.net/chenmoquan/article/details/17095465#">view plain</a><span data-mod="popu_168"><span data-mod="popu_168">&nbsp;<a class="CopyToClipboard" title="copy" href="http://blog.csdn.net/chenmoquan/article/details/17095465#">copy</a></span></span>
+<div>&nbsp;</div>
+
+<span data-mod="popu_168"><span data-mod="popu_169">&nbsp;<span class="tracking-ad" data-mod="popu_167"><a title="在CODE上查看代码片" href="https://code.csdn.net/snippets/94148" target="_blank"><img src="./CSS命名规范——BEM思想_files/CODE_ico.png" alt="在CODE上查看代码片" width="12" height="12"></a><span class="tracking-ad" data-mod="popu_170"><a title="派生到我的代码片" href="https://code.csdn.net/snippets/94148/fork" target="_blank"><img src="./CSS命名规范——BEM思想_files/ico_fork.svg" alt="派生到我的代码片" width="12" height="12"></a></span></span></span></span></div>
+
+</div>
+<ol class="dp-css" start="1">
+<li class="alt">.person{}&nbsp;&nbsp;</li>
+<li>.hand{}&nbsp;&nbsp;</li>
+<li class="alt">.female{}&nbsp;&nbsp;</li>
+<li>.female-hand{}&nbsp;&nbsp;</li>
+<li class="alt">.left-hand{}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+
+</ol></div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>这些‘常规’CSS都是有意义的，但是它们之间却有些脱节。就拿.female来说，是指女性人类还是某种雌性的动物？还有.hand，是在说一只钟表的指针（译注：英文中hand有指针的意思）？还是一只正在玩纸牌的手？使用BEM我们可以获得更多的描述和更加清晰的结构，单单通过我们代码中的命名就能知道元素之间的关联。BEM真是强大。</p>
+<p>再来看一个之前用‘常规’方式命名的.site-search的例子：</p>
+<p>&nbsp;</p>
+<div class="dp-highlighter bg_html">
+<div class="bar">
+<div class="tools"><strong>[html]</strong>&nbsp;<a class="ViewSource" title="view plain" href="http://blog.csdn.net/chenmoquan/article/details/17095465#">view plain</a><span data-mod="popu_168"><span data-mod="popu_168">&nbsp;<a class="CopyToClipboard" title="copy" href="http://blog.csdn.net/chenmoquan/article/details/17095465#">copy</a></span></span>
+<div>&nbsp;</div>
+
+<span data-mod="popu_168"><span data-mod="popu_169">&nbsp;<span class="tracking-ad" data-mod="popu_167"><a title="在CODE上查看代码片" href="https://code.csdn.net/snippets/94148" target="_blank"><img src="./CSS命名规范——BEM思想_files/CODE_ico.png" alt="在CODE上查看代码片" width="12" height="12"></a><span class="tracking-ad" data-mod="popu_170"><a title="派生到我的代码片" href="https://code.csdn.net/snippets/94148/fork" target="_blank"><img src="./CSS命名规范——BEM思想_files/ico_fork.svg" alt="派生到我的代码片" width="12" height="12"></a></span></span></span></span></div>
+
+</div>
+<ol class="dp-xml" start="1">
+<li class="alt"><span class="tag">&lt;<span class="tag-name">form&nbsp;<span class="attribute">class=<span class="attribute-value">"site-search&nbsp;&nbsp;full"<span class="tag">&gt;&nbsp;&nbsp;</span></span></span></span></span></li>
+<li>&nbsp;&nbsp;<span class="tag">&lt;<span class="tag-name">input&nbsp;<span class="attribute">type=<span class="attribute-value">"text"&nbsp;<span class="attribute">class=<span class="attribute-value">"field"<span class="tag">&gt;&nbsp;&nbsp;</span></span></span></span></span></span></span></li>
+<li class="alt">&nbsp;&nbsp;<span class="tag">&lt;<span class="tag-name">input&nbsp;<span class="attribute">type=<span class="attribute-value">"Submit"&nbsp;<span class="attribute">value&nbsp;=<span class="attribute-value">"Search"&nbsp;<span class="attribute">class=<span class="attribute-value">"button"<span class="tag">&gt;&nbsp;&nbsp;</span></span></span></span></span></span></span></span></span></li>
+<li><span class="tag">&lt;/<span class="tag-name">form<span class="tag">&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span></li>
+
+</ol></div>
+<p>
+<br><br></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>这些CSS类名真是太不精确了，并不能告诉我们足够的信息。尽管我们可以用它们来完成工作，但它们确实非常含糊不清。用BEM记号法就会是下面这个样子：</p>
+<p>&nbsp;</p>
+<div class="dp-highlighter bg_html">
+<div class="bar">
+<div class="tools"><strong>[html]</strong>&nbsp;<a class="ViewSource" title="view plain" href="http://blog.csdn.net/chenmoquan/article/details/17095465#">view plain</a><span data-mod="popu_168"><span data-mod="popu_168">&nbsp;<a class="CopyToClipboard" title="copy" href="http://blog.csdn.net/chenmoquan/article/details/17095465#">copy</a></span></span>
+<div>&nbsp;</div>
+
+<span data-mod="popu_168"><span data-mod="popu_169">&nbsp;<span class="tracking-ad" data-mod="popu_167"><a title="在CODE上查看代码片" href="https://code.csdn.net/snippets/94148" target="_blank"><img src="./CSS命名规范——BEM思想_files/CODE_ico.png" alt="在CODE上查看代码片" width="12" height="12"></a><span class="tracking-ad" data-mod="popu_170"><a title="派生到我的代码片" href="https://code.csdn.net/snippets/94148/fork" target="_blank"><img src="./CSS命名规范——BEM思想_files/ico_fork.svg" alt="派生到我的代码片" width="12" height="12"></a></span></span></span></span></div>
+
+</div>
+<ol class="dp-xml" start="1">
+<li class="alt"><span class="tag">&lt;<span class="tag-name">form&nbsp;<span class="attribute">class=<span class="attribute-value">"site-search&nbsp;&nbsp;site-search--full"<span class="tag">&gt;&nbsp;&nbsp;</span></span></span></span></span></li>
+<li>&nbsp;&nbsp;<span class="tag">&lt;<span class="tag-name">input&nbsp;<span class="attribute">type=<span class="attribute-value">"text"&nbsp;<span class="attribute">class=<span class="attribute-value">"site-search__field"<span class="tag">&gt;&nbsp;&nbsp;</span></span></span></span></span></span></span></li>
+<li class="alt">&nbsp;&nbsp;<span class="tag">&lt;<span class="tag-name">input&nbsp;<span class="attribute">type=<span class="attribute-value">"Submit"&nbsp;<span class="attribute">value&nbsp;=<span class="attribute-value">"Search"&nbsp;<span class="attribute">class=<span class="attribute-value">"site-search__button"<span class="tag">&gt;&nbsp;&nbsp;</span></span></span></span></span></span></span></span></span></li>
+<li><span class="tag">&lt;/<span class="tag-name">form<span class="tag">&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span></li>
+
+</ol></div>
+<p>
+<br><br></p>
+<p>&nbsp;</p>
+<p>我们能清晰地看到有个叫.site-search的块，他内部是一个叫.site-search__field的元素。并且.site-search还有另外一种形态叫.site-search--full。</p>
+<p>我们再来举个例子……</p>
+<p>如果你熟悉OOCSS（面向对象CSS），那么你对<a href="http://stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code" target="_blank">media对象</a>一定也不陌生。用BEM的方式，media对象就会是下面这个样子：</p>
+<p>&nbsp;</p>
+<div class="dp-highlighter bg_html">
+<div class="bar">
+<div class="tools"><strong>[html]</strong>&nbsp;<a class="ViewSource" title="view plain" href="http://blog.csdn.net/chenmoquan/article/details/17095465#">view plain</a><span data-mod="popu_168"><span data-mod="popu_168">&nbsp;<a class="CopyToClipboard" title="copy" href="http://blog.csdn.net/chenmoquan/article/details/17095465#">copy</a></span></span>
+<div>&nbsp;</div>
+
+<span data-mod="popu_168"><span data-mod="popu_169">&nbsp;<span class="tracking-ad" data-mod="popu_167"><a title="在CODE上查看代码片" href="https://code.csdn.net/snippets/94148" target="_blank"><img src="./CSS命名规范——BEM思想_files/CODE_ico.png" alt="在CODE上查看代码片" width="12" height="12"></a><span class="tracking-ad" data-mod="popu_170"><a title="派生到我的代码片" href="https://code.csdn.net/snippets/94148/fork" target="_blank"><img src="./CSS命名规范——BEM思想_files/ico_fork.svg" alt="派生到我的代码片" width="12" height="12"></a></span></span></span></span></div>
+
+</div>
+<ol class="dp-xml" start="1">
+<li class="alt">.media{}&nbsp;&nbsp;</li>
+<li>.media__img{}&nbsp;&nbsp;</li>
+<li class="alt">.media__img--rev{}&nbsp;&nbsp;</li>
+<li>.media__body{}&nbsp;&nbsp;&nbsp;&nbsp;</li>
+
+</ol></div>
+<p>
+<br><br></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>从这种CSS的写法上我们就已经知道.media__img 和.media__body一定是位于.media内部的，而且.media__img--rev是.media__img的另一种形态。仅仅通过CSS选择器的名字我们就能获取到以上全部信息。</p>
+<p>BEM的另外一个好处是针对下面这种情况：</p>
+<p>&nbsp;</p>
+<div class="dp-highlighter bg_html">
+<div class="bar">
+<div class="tools"><strong>[html]</strong>&nbsp;<a class="ViewSource" title="view plain" href="http://blog.csdn.net/chenmoquan/article/details/17095465#">view plain</a><span data-mod="popu_168"><span data-mod="popu_168">&nbsp;<a class="CopyToClipboard" title="copy" href="http://blog.csdn.net/chenmoquan/article/details/17095465#">copy</a></span></span>
+<div>&nbsp;</div>
+
+<span data-mod="popu_168"><span data-mod="popu_169">&nbsp;<span class="tracking-ad" data-mod="popu_167"><a title="在CODE上查看代码片" href="https://code.csdn.net/snippets/94148" target="_blank"><img src="./CSS命名规范——BEM思想_files/CODE_ico.png" alt="在CODE上查看代码片" width="12" height="12"></a><span class="tracking-ad" data-mod="popu_170"><a title="派生到我的代码片" href="https://code.csdn.net/snippets/94148/fork" target="_blank"><img src="./CSS命名规范——BEM思想_files/ico_fork.svg" alt="派生到我的代码片" width="12" height="12"></a></span></span></span></span></div>
+
+</div>
+<ol class="dp-xml" start="1">
+<li class="alt"><span class="tag">&lt;<span class="tag-name">div&nbsp;<span class="attribute">class=<span class="attribute-value">"media"<span class="tag">&gt;&nbsp;&nbsp;</span></span></span></span></span></li>
+<li>&nbsp;&nbsp;<span class="tag">&lt;<span class="tag-name">img&nbsp;<span class="attribute">src=<span class="attribute-value">"logo.png"&nbsp;<span class="attribute">alt=<span class="attribute-value">"Foo&nbsp;Corp&nbsp;logo"&nbsp;<span class="attribute">class=<span class="attribute-value">"img-rev"<span class="tag">&gt;&nbsp;&nbsp;</span></span></span></span></span></span></span></span></span></li>
+<li class="alt">&nbsp;&nbsp;<span class="tag">&lt;<span class="tag-name">div&nbsp;<span class="attribute">class=<span class="attribute-value">"body"<span class="tag">&gt;&nbsp;&nbsp;</span></span></span></span></span></li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="tag-name">h3&nbsp;<span class="attribute">class=<span class="attribute-value">"alpha"<span class="tag">&gt;Welcome&nbsp;to&nbsp;Foo&nbsp;Corp<span class="tag">&lt;/<span class="tag-name">h3<span class="tag">&gt;&nbsp;&nbsp;</span></span></span></span></span></span></span></span></li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="tag-name">p&nbsp;<span class="attribute">class=<span class="attribute-value">"lede"<span class="tag">&gt;Foo&nbsp;Corp&nbsp;is&nbsp;the&nbsp;best,&nbsp;seriously!<span class="tag">&lt;/<span class="tag-name">p<span class="tag">&gt;&nbsp;&nbsp;</span></span></span></span></span></span></span></span></li>
+<li>&nbsp;&nbsp;<span class="tag">&lt;/<span class="tag-name">div<span class="tag">&gt;&nbsp;&nbsp;</span></span></span></li>
+<li class="alt"><span class="tag">&lt;/<span class="tag-name">div<span class="tag">&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span></li>
+
+</ol></div>
+<p>
+<br><br></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>光从上面的代码来看，我们根本不明白.media和.alpha两个class彼此之间是如何相互关联的？同样我们也无从知晓.body和.lede之间，或者.img-rev 和.media之间各是什么关系？从这段HTML（除非你对那个media对象非常了解）中我们也不知道这个组件是由什么组成的和它还有什么其他的形态。如果我们用BEM方式重写这段代码：</p>
+<p>&nbsp;</p>
+<div class="dp-highlighter bg_html">
+<div class="bar">
+<div class="tools"><strong>[html]</strong>&nbsp;<a class="ViewSource" title="view plain" href="http://blog.csdn.net/chenmoquan/article/details/17095465#">view plain</a><span data-mod="popu_168"><span data-mod="popu_168">&nbsp;<a class="CopyToClipboard" title="copy" href="http://blog.csdn.net/chenmoquan/article/details/17095465#">copy</a></span></span>
+<div>&nbsp;</div>
+
+<span data-mod="popu_168"><span data-mod="popu_169">&nbsp;<span class="tracking-ad" data-mod="popu_167"><a title="在CODE上查看代码片" href="https://code.csdn.net/snippets/94148" target="_blank"><img src="./CSS命名规范——BEM思想_files/CODE_ico.png" alt="在CODE上查看代码片" width="12" height="12"></a><span class="tracking-ad" data-mod="popu_170"><a title="派生到我的代码片" href="https://code.csdn.net/snippets/94148/fork" target="_blank"><img src="./CSS命名规范——BEM思想_files/ico_fork.svg" alt="派生到我的代码片" width="12" height="12"></a></span></span></span></span></div>
+
+</div>
+<ol class="dp-xml" start="1">
+<li class="alt"><span class="tag">&lt;<span class="tag-name">div&nbsp;<span class="attribute">class=<span class="attribute-value">"media"<span class="tag">&gt;&nbsp;&nbsp;</span></span></span></span></span></li>
+<li>&nbsp;&nbsp;<span class="tag">&lt;<span class="tag-name">img&nbsp;<span class="attribute">src=<span class="attribute-value">"logo.png"&nbsp;<span class="attribute">alt=<span class="attribute-value">"Foo&nbsp;Corp&nbsp;logo"&nbsp;<span class="attribute">class=<span class="attribute-value">"media__img--rev"<span class="tag">&gt;&nbsp;&nbsp;</span></span></span></span></span></span></span></span></span></li>
+<li class="alt">&nbsp;&nbsp;<span class="tag">&lt;<span class="tag-name">div&nbsp;<span class="attribute">class=<span class="attribute-value">"media__body"<span class="tag">&gt;&nbsp;&nbsp;</span></span></span></span></span></li>
+<li>&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="tag-name">h3&nbsp;<span class="attribute">class=<span class="attribute-value">"alpha"<span class="tag">&gt;Welcome&nbsp;to&nbsp;Foo&nbsp;Corp<span class="tag">&lt;/<span class="tag-name">h3<span class="tag">&gt;&nbsp;&nbsp;</span></span></span></span></span></span></span></span></li>
+<li class="alt">&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;<span class="tag-name">p&nbsp;<span class="attribute">class=<span class="attribute-value">"lede"<span class="tag">&gt;Foo&nbsp;Corp&nbsp;is&nbsp;the&nbsp;best,&nbsp;seriously!<span class="tag">&lt;/<span class="tag-name">p<span class="tag">&gt;&nbsp;&nbsp;</span></span></span></span></span></span></span></span></li>
+<li>&nbsp;&nbsp;<span class="tag">&lt;/<span class="tag-name">div<span class="tag">&gt;&nbsp;&nbsp;</span></span></span></li>
+<li class="alt"><span class="tag">&lt;/<span class="tag-name">div<span class="tag">&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span></li>
+
+</ol></div>
+<p>
+<br><br></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>我们立马就能明白.media是一个块，.media__img--rev是一个加了修饰符的.media__img的变体，它是属于.media的元素。而.media__body是一个尚未被改变过的也是属于.media的元素。所有以上这些信息都通过它们的class名称就能明白，由此看来BEM确实非常实用。</p>
+<h2><a name="t0"></a>丑极了！</h2>
+<p>通常人们会认为BEM这种写法难看。我敢说，如果你仅仅是因为这种代码看上去不怎么好看而羞于使用它，那么你将错失最重要的东西。除非使用BEM让代码增加了不必要的维护困难，或者这么做确实让代码更难读了，那么你在使用它之前就要三思而行了。但是，如果只是“看起来有点怪”而事实上是一种有效的手段，那么我们在开发之前当然应该充分考虑它。</p>
+<p>是，BEM看上去确实怪怪的，但是它的好处远远超过它外观上的那点瑕疵。</p>
+<p>BEM可能看上去有点滑稽，而且有可能导致我们输入更长的文本（大部分编辑器都有自动补全功能，而且gzip压缩将会让我们消除对文件体积的担忧），但是它依旧强大。</p>
+<h2><a name="t1"></a>用还是不用BEM?</h2>
+<p>我在我的所有项目中都使用了BEM记号法，因为它的有效性已经被它自己一次又一次地证明。我也极力地建议别人使用BEM，因为它让所有东西之间的联系变得更加紧密，让团队甚至是你个人都能够更加容易地维护代码。</p>
+<p>然而，当你真正使用BEM的时候，重要的是，请记住你没必要真的在每个地方都用上它。比如：</p>
+<p>&nbsp;</p>
+<div class="dp-highlighter bg_css">
+<div class="bar">
+<div class="tools"><strong>[css]</strong>&nbsp;<a class="ViewSource" title="view plain" href="http://blog.csdn.net/chenmoquan/article/details/17095465#">view plain</a><span data-mod="popu_168"><span data-mod="popu_168">&nbsp;<a class="CopyToClipboard" title="copy" href="http://blog.csdn.net/chenmoquan/article/details/17095465#">copy</a></span></span>
+<div>&nbsp;</div>
+
+<span data-mod="popu_168"><span data-mod="popu_169">&nbsp;<span class="tracking-ad" data-mod="popu_167"><a title="在CODE上查看代码片" href="https://code.csdn.net/snippets/94148" target="_blank"><img src="./CSS命名规范——BEM思想_files/CODE_ico.png" alt="在CODE上查看代码片" width="12" height="12"></a><span class="tracking-ad" data-mod="popu_170"><a title="派生到我的代码片" href="https://code.csdn.net/snippets/94148/fork" target="_blank"><img src="./CSS命名规范——BEM思想_files/ico_fork.svg" alt="派生到我的代码片" width="12" height="12"></a></span></span></span></span></div>
+
+</div>
+<ol class="dp-css" start="1">
+<li class="alt">.caps{&nbsp;<span class="keyword">text-transform:<span class="value">uppercase;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;</span></span></li>
+
+</ol></div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>这条CSS不属于任何一个BEM范畴，它仅仅只是一条单独的样式。</p>
+<p>另一个没有使用BEM的例子是：</p>
+<p>&nbsp;</p>
+<div class="dp-highlighter bg_css">
+<div class="bar">
+<div class="tools"><strong>[css]</strong>&nbsp;<a class="ViewSource" title="view plain" href="http://blog.csdn.net/chenmoquan/article/details/17095465#">view plain</a><span data-mod="popu_168"><span data-mod="popu_168">&nbsp;<a class="CopyToClipboard" title="copy" href="http://blog.csdn.net/chenmoquan/article/details/17095465#">copy</a></span></span>
+<div>&nbsp;</div>
+
+<span data-mod="popu_168"><span data-mod="popu_169">&nbsp;<span class="tracking-ad" data-mod="popu_167"><a title="在CODE上查看代码片" href="https://code.csdn.net/snippets/94148" target="_blank"><img src="./CSS命名规范——BEM思想_files/CODE_ico.png" alt="在CODE上查看代码片" width="12" height="12"></a><span class="tracking-ad" data-mod="popu_170"><a title="派生到我的代码片" href="https://code.csdn.net/snippets/94148/fork" target="_blank"><img src="./CSS命名规范——BEM思想_files/ico_fork.svg" alt="派生到我的代码片" width="12" height="12"></a></span></span></span></span></div>
+
+</div>
+<ol class="dp-css" start="1">
+<li class="alt">.site-logo{}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+
+</ol></div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>这是一个logo，我们可以把它写成BEM格式，像下面这样：</p>
+<p>&nbsp;</p>
+<div class="dp-highlighter bg_css">
+<div class="bar">
+<div class="tools"><strong>[css]</strong>&nbsp;<a class="ViewSource" title="view plain" href="http://blog.csdn.net/chenmoquan/article/details/17095465#">view plain</a><span data-mod="popu_168"><span data-mod="popu_168">&nbsp;<a class="CopyToClipboard" title="copy" href="http://blog.csdn.net/chenmoquan/article/details/17095465#">copy</a></span></span>
+<div>&nbsp;</div>
+
+<span data-mod="popu_168"><span data-mod="popu_169">&nbsp;<span class="tracking-ad" data-mod="popu_167"><a title="在CODE上查看代码片" href="https://code.csdn.net/snippets/94148" target="_blank"><img src="./CSS命名规范——BEM思想_files/CODE_ico.png" alt="在CODE上查看代码片" width="12" height="12"></a><span class="tracking-ad" data-mod="popu_170"><a title="派生到我的代码片" href="https://code.csdn.net/snippets/94148/fork" target="_blank"><img src="./CSS命名规范——BEM思想_files/ico_fork.svg" alt="派生到我的代码片" width="12" height="12"></a></span></span></span></span></div>
+
+</div>
+<ol class="dp-css" start="1">
+<li class="alt">.header{}&nbsp;&nbsp;</li>
+<li>.header__logo{}&nbsp;&nbsp;&nbsp;</li>
+
+</ol></div>
+<p>
+<br><br></p>
+<p>&nbsp;</p>
+<p>但我们没必要这么做。使用BEM的诀窍是，你要知道什么时候哪些东西是应该写成BEM格式的。因为某些东西确实是位于一个块的内部，但这并不意味它就是BEM中所说的元素。这个例子中，网站logo完全是恰巧在.header的内部，它也有可能在侧边栏或是页脚里面。一个元素的范围可能开始于任何上下文，因此你要确定只在你需要用到BEM的地方你才使用它。再看一个例子：</p>
+<p>&nbsp;</p>
+<div class="dp-highlighter bg_html">
+<div class="bar">
+<div class="tools"><strong>[html]</strong>&nbsp;<a class="ViewSource" title="view plain" href="http://blog.csdn.net/chenmoquan/article/details/17095465#">view plain</a><span data-mod="popu_168"><span data-mod="popu_168">&nbsp;<a class="CopyToClipboard" title="copy" href="http://blog.csdn.net/chenmoquan/article/details/17095465#">copy</a></span></span>
+<div>&nbsp;</div>
+
+<span data-mod="popu_168"><span data-mod="popu_169">&nbsp;<span class="tracking-ad" data-mod="popu_167"><a title="在CODE上查看代码片" href="https://code.csdn.net/snippets/94148" target="_blank"><img src="./CSS命名规范——BEM思想_files/CODE_ico.png" alt="在CODE上查看代码片" width="12" height="12"></a><span class="tracking-ad" data-mod="popu_170"><a title="派生到我的代码片" href="https://code.csdn.net/snippets/94148/fork" target="_blank"><img src="./CSS命名规范——BEM思想_files/ico_fork.svg" alt="派生到我的代码片" width="12" height="12"></a></span></span></span></span></div>
+
+</div>
+<ol class="dp-xml" start="1">
+<li class="alt"><span class="tag">&lt;<span class="tag-name">div&nbsp;<span class="attribute">class=<span class="attribute-value">"content"<span class="tag">&gt;&nbsp;&nbsp;</span></span></span></span></span></li>
+<li>&nbsp;&nbsp;<span class="tag">&lt;<span class="tag-name">h1&nbsp;<span class="attribute">class=<span class="attribute-value">"content__headline"<span class="tag">&gt;Lorem&nbsp;ipsum&nbsp;dolor...<span class="tag">&lt;/<span class="tag-name">h1<span class="tag">&gt;&nbsp;&nbsp;</span></span></span></span></span></span></span></span></li>
+<li class="alt"><span class="tag">&lt;/<span class="tag-name">div<span class="tag">&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span></li>
+
+</ol></div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>在这个例子里，我们也许仅仅只需要另一个class，可以叫它.headline；它的样式取决于它是如何被层叠的，因为它在.content的内部；或者它只是恰巧在.content的内部。如果它是后者（即恰巧在.content的内部，而不总是在）我们就不需要使用BEM。</p>
+<p>然而，一切都有可能潜在地用到BEM。我们再来看一下.site-logo的例子，想象一下我们想要给网站增加一点圣诞节的气氛，所以我们想有一个圣诞版的logo。于是我们有了下面的代码：</p>
+<p>&nbsp;</p>
+<div class="dp-highlighter bg_css">
+<div class="bar">
+<div class="tools"><strong>[css]</strong>&nbsp;<a class="ViewSource" title="view plain" href="http://blog.csdn.net/chenmoquan/article/details/17095465#">view plain</a><span data-mod="popu_168"><span data-mod="popu_168">&nbsp;<a class="CopyToClipboard" title="copy" href="http://blog.csdn.net/chenmoquan/article/details/17095465#">copy</a></span></span>
+<div>&nbsp;</div>
+
+<span data-mod="popu_168"><span data-mod="popu_169">&nbsp;<span class="tracking-ad" data-mod="popu_167"><a title="在CODE上查看代码片" href="https://code.csdn.net/snippets/94148" target="_blank"><img src="./CSS命名规范——BEM思想_files/CODE_ico.png" alt="在CODE上查看代码片" width="12" height="12"></a><span class="tracking-ad" data-mod="popu_170"><a title="派生到我的代码片" href="https://code.csdn.net/snippets/94148/fork" target="_blank"><img src="./CSS命名规范——BEM思想_files/ico_fork.svg" alt="派生到我的代码片" width="12" height="12"></a></span></span></span></span></div>
+
+</div>
+<ol class="dp-css" start="1">
+<li class="alt">.site-logo{}&nbsp;&nbsp;</li>
+<li>.site-logo--xmas{}&nbsp;&nbsp;&nbsp;&nbsp;</li>
+
+</ol></div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>我们可以通过使用--修饰符来快速地为我们的代码构建另一个版本。</p>
+<p>BEM最难的部分之一是明确作用域是从哪开始和到哪结束的，以及什么时候使用（不使用）它。随着接触的多了，有了经验积累，你慢慢就会知道怎么用，这些问题也不再是问题。</p>
+<h2><a name="t2"></a>结束语</h2>
+<p>所以，BEM（或BEM的变体）是一个非常有用，强大，简单的命名约定，以至于让你的前端代码更容易阅读和理解，更容易协作，更容易控制，更加健壮和明确而且更加严密。</p>
+<p>尽管BEM看上去多少有点奇怪，但是无论什么项目，它对前端开发者都是一个巨有价值的工具。</p></div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory"></div>
+<div id="EntryTag"></div>
+<div id="blog_post_info"><div id="green_channel">
+        <a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(5862911,cb_blogId,1);green_channel_success(this,&#39;谢谢推荐！&#39;);">好文要顶</a>
+            <a id="green_channel_follow" onclick="follow(&#39;f01a6654-5942-e611-9fc1-ac853d9f53cc&#39;);" href="javascript:void(0);">关注我</a>
+    <a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a>
+    <a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="./CSS命名规范——BEM思想_files/icon_weibo_24.png" alt=""></a>
+    <a id="green_channel_wechat" href="javascript:void(0);" title="分享至微信" onclick="shareOnWechat()"><img src="./CSS命名规范——BEM思想_files/wechat.png" alt=""></a>
+</div>
+<div id="author_profile">
+    <div id="author_profile_info" class="author_profile_info">
+            <a href="https://home.cnblogs.com/u/dujishi/" target="_blank"><img src="./CSS命名规范——BEM思想_files/20171115171039.png" class="author_avatar" alt=""></a>
+        <div id="author_profile_detail" class="author_profile_info">
+            <a href="https://home.cnblogs.com/u/dujishi/">小草露露</a><br>
+            <a href="https://home.cnblogs.com/u/dujishi/followees">关注 - 1</a><br>
+            <a href="https://home.cnblogs.com/u/dujishi/followers">粉丝 - 1</a>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="author_profile_honor"></div>
+    <div id="author_profile_follow">
+                <a href="javascript:void(0);" onclick="follow(&#39;f01a6654-5942-e611-9fc1-ac853d9f53cc&#39;);return false;">+加关注</a>
+    </div>
+</div>
+<div id="div_digg">
+    <div class="diggit" onclick="votePost(5862911,&#39;Digg&#39;)">
+        <span class="diggnum" id="digg_count">1</span>
+    </div>
+    <div class="buryit" onclick="votePost(5862911,&#39;Bury&#39;)">
+        <span class="burynum" id="bury_count">0</span>
+    </div>
+    <div class="clear"></div>
+    <div class="diggword" id="digg_tips">
+    </div>
+</div>
+<script type="text/javascript">
+    currentDiggType = 0;
+</script></div>
+<div class="clear"></div>
+<div id="post_next_prev"><a href="https://www.cnblogs.com/dujishi/p/5858846.html" class="p_n_p_prefix">« </a> 上一篇：<a href="https://www.cnblogs.com/dujishi/p/5858846.html" title="发布于2016-09-10 10:01">CSS Hack技术介绍及常用的Hack技巧集锦</a><br><a href="https://www.cnblogs.com/dujishi/p/5878816.html" class="p_n_p_prefix">» </a> 下一篇：<a href="https://www.cnblogs.com/dujishi/p/5878816.html" title="发布于2016-09-17 14:50">有关闭包的总结</a><br></div>
+</div>
+
+
+		</div>
+		<div class="postDesc">posted @ <span id="post-date">2016-09-11 21:56</span> <a href="https://www.cnblogs.com/dujishi/">小草露露</a> 阅读(<span id="post_view_count">21025</span>) 评论(<span id="post_comment_count">3</span>)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=5862911" rel="nofollow">编辑</a> <a href="https://www.cnblogs.com/dujishi/p/5862911.html#" onclick="AddToWz(5862911);return false;">收藏</a></div>
+	</div>
+	<script type="text/javascript">var allowComments=true,cb_blogId=292743,cb_entryId=5862911,cb_blogApp=currentBlogApp,cb_blogUserGuid='f01a6654-5942-e611-9fc1-ac853d9f53cc',cb_entryCreatedDate='2016/9/11 21:56:00';loadViewCount(cb_entryId);var cb_postType=1;var isMarkdown=false;</script>
+	
+</div><!--end: topics 文章、评论容器-->
+</div><a name="!comments"></a><div id="blog-comments-placeholder"><div id="comments_pager_top"></div>
+<br>
+<div class="feedback_area_title">评论列表</div>
+<div class="feedbackNoItems"></div>	
+
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/dujishi/p/5862911.html#3598470" class="layer">#1楼</a><a name="3598470" id="comment_anchor_3598470"></a>  <span class="comment_date">2017-01-07 13:20</span> <a id="a_comment_author_3598470" href="https://www.cnblogs.com/MrFive/" target="_blank">伴随风飞</a> <a href="http://msg.cnblogs.com/send/%E4%BC%B4%E9%9A%8F%E9%A3%8E%E9%A3%9E" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3598470" class="blog_comment_body">路过~</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3598470,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3598470,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3598470_avatar" style="display:none;">http://pic.cnblogs.com/face/805665/20150928174304.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/dujishi/p/5862911.html#3970105" class="layer">#2楼</a><a name="3970105" id="comment_anchor_3970105"></a>  <span class="comment_date">2018-05-08 15:48</span> <a id="a_comment_author_3970105" href="https://www.cnblogs.com/iTech-Blog-ByLeon/" target="_blank">leoooon</a> <a href="http://msg.cnblogs.com/send/leoooon" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3970105" class="blog_comment_body">好 赞 正纠结于如何命名类名 神烦这些命名规则</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3970105,&#39;Digg&#39;,this)">支持(1)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3970105,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3970105_avatar" style="display:none;">http://pic.cnblogs.com/face/1057248/20161104173411.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="https://www.cnblogs.com/dujishi/p/5862911.html#4162705" class="layer">#3楼</a><a name="4162705" id="comment_anchor_4162705"></a><span id="comment-maxId" style="display:none;">4162705</span><span id="comment-maxDate" style="display:none;">2019/1/14 17:20:20</span>  <span class="comment_date">2019-01-14 17:20</span> <a id="a_comment_author_4162705" href="https://www.cnblogs.com/weiyinfu/" target="_blank">weiyinfu</a> <a href="http://msg.cnblogs.com/send/weiyinfu" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_4162705" class="blog_comment_body">BEM好像更加繁琐，这跟上世纪九十年代的匈牙利有异曲同工之不妙</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(4162705,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(4162705,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_4162705_avatar" style="display:none;">http://pic.cnblogs.com/face/695653/20150521202902.png</span>
+			</div>
+		</div>
+	<div id="comments_pager_bottom"></div></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id="comment_form" class="commentform">
+<a name="commentform"></a>
+<div id="divCommentShow"></div>
+<div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="https://www.cnblogs.com/dujishi/p/5862911.html#" onclick="return RefreshPage();">刷新页面</a><a href="https://www.cnblogs.com/dujishi/p/5862911.html#top">返回顶部</a></div>
+<div id="comment_form_container"><div class="login_tips">注册用户登录后才能发表评论，请 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return login(&#39;commentform&#39;);">登录</a> 或 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return register();">注册</a>，<a href="http://www.cnblogs.com/">访问</a>网站首页。</div></div>
+<div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+<div id="ad_t2"><a href="http://www.ucancode.com/index.htm" target="_blank" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Link&#39;, &#39;click&#39;, &#39;T2-工控&#39;)">【推荐】超50万C++/C#源码: 大型实时仿真组态图形源码</a><br><a href="https://www.grapecity.com.cn/developer/spreadjs?utm_source=cnblogs&amp;utm_medium=blogpage&amp;utm_term=bottom&amp;utm_content=SpreadJS&amp;utm_campaign=community" target="_blank" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Link&#39;, &#39;click&#39;, &#39;T2-SpreadJS&#39;)">【前端】SpreadJS表格控件，可嵌入系统开发的在线Excel</a><br><a href="https://ke.qq.com/adActivity.html?name=xiangxueketang2" target="_blank" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Link&#39;, &#39;click&#39;, &#39;T2-享学&#39;)">【培训】阿里P8面试官：什么样的人能进阿里</a><br><a href="https://q.cnblogs.com/" target="_blank" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Link&#39;, &#39;click&#39;, &#39;T2-博问&#39;)">【推荐】程序员问答平台，解决您开发中遇到的技术难题</a><br></div>
+<div id="opt_under_post"></div>
+<script async="async" src="./CSS命名规范——BEM思想_files/gpt.js.下载"></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+<script>
+  googletag.cmd.push(function() {
+        googletag.defineSlot('/1090369/C1', [300, 250], 'div-gpt-ad-1546353474406-0').addService(googletag.pubads());
+        googletag.defineSlot('/1090369/C2', [468, 60], 'div-gpt-ad-1539008685004-0').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+  });
+</script>
+<div id="cnblogs_c1" class="c_ad_block">
+    <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;" data-google-query-id="CPjYpoeN5uICFVp4iwodQP0HZA"><div id="google_ads_iframe_/1090369/C1_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1090369/C1_0" title="3rd party ad content" name="google_ads_iframe_/1090369/C1_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true" src="./CSS命名规范——BEM思想_files/saved_resource.html"></iframe></div></div>
+</div>
+<div id="under_post_news"><div class="recomm-block"><b>相关博文：</b><br>·  <a href="https://www.cnblogs.com/chern2468/p/6746911.html" target="_blank" onclick="clickRecomItmem(6746911)">CSS命名规范——BEM思想</a><br>·  <a href="https://www.cnblogs.com/langxiyu/p/10592798.html" target="_blank" onclick="clickRecomItmem(10592798)">CSS命名规范——BEM思想</a><br>·  <a href="https://www.cnblogs.com/iflygofy/p/8583196.html" target="_blank" onclick="clickRecomItmem(8583196)">BEM思想之彻底弄清BEM语法</a><br>·  <a href="https://www.cnblogs.com/chun6/p/7482992.html" target="_blank" onclick="clickRecomItmem(7482992)">BEM --Yandex的CSS 命名方法论</a><br>·  <a href="https://www.cnblogs.com/llying/p/7296022.html" target="_blank" onclick="clickRecomItmem(7296022)">BEM命名规范</a><br></div></div>
+<div id="cnblogs_c2" class="c_ad_block">
+    <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;" data-google-query-id="CJvpp4eN5uICFVp4iwodQP0HZA"><div id="google_ads_iframe_/1090369/C2_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1090369/C2_0" title="3rd party ad content" name="google_ads_iframe_/1090369/C2_0" width="468" height="60" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" data-google-container-id="2" style="border: 0px; vertical-align: bottom;" data-load-complete="true" src="./CSS命名规范——BEM思想_files/saved_resource(1).html"></iframe></div></div>
+</div>
+<div id="under_post_kb"><div class="itnews c_ad_block"><b>最新新闻</b>：<br> ·  <a href="https://news.cnblogs.com/n/626811/" target="_blank">日本JDI裁员1200人：手机工厂7-9月停工</a><br> ·  <a href="https://news.cnblogs.com/n/626810/" target="_blank">Pixel 4 真机照被 Google 官宣了，但它的 3 大黑科技更让人期待</a><br> ·  <a href="https://news.cnblogs.com/n/626809/" target="_blank">台积电稳坐全球TOP10晶圆代工第一 大陆入围2家</a><br> ·  <a href="https://news.cnblogs.com/n/626808/" target="_blank">“基因魔剪”新系统无需断链编辑基因</a><br> ·  <a href="https://news.cnblogs.com/n/626807/" target="_blank">中国宣布空间站首批科学实验项目：来自17个国家</a><br>» <a href="http://news.cnblogs.com/" title="IT新闻" target="_blank">更多新闻...</a></div></div>
+<div id="HistoryToday" class="c_ad_block"></div>
+<script type="text/javascript">
+ if(enablePostBottom()) {
+    codeHighlight();
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverT2();
+    deliverC1();
+    deliverC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);  
+}
+</script>
+</div>
+
+    
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<!--done-->
+<div class="newsItem">
+<h3 class="catListTitle">公告</h3>
+	<div id="blog-news"><div id="profile_block">昵称：<a href="https://home.cnblogs.com/u/dujishi/">小草露露</a><br>园龄：<a href="https://home.cnblogs.com/u/dujishi/" title="入园时间：2016-07-05">2年11个月</a><br>粉丝：<a href="https://home.cnblogs.com/u/dujishi/followers/">1</a><br>关注：<a href="https://home.cnblogs.com/u/dujishi/followees/">1</a><div id="p_b_follow"><a href="javascript:void(0);" onclick="follow(&#39;f01a6654-5942-e611-9fc1-ac853d9f53cc&#39;)">+加关注</a></div><script>getFollowStatus('f01a6654-5942-e611-9fc1-ac853d9f53cc')</script></div></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style=""><table id="blogCalendar" class="Cal" cellspacing="0" cellpadding="0" title="Calendar">
+	<tbody><tr><td colspan="7"><table class="CalTitle" cellspacing="0">
+		<tbody><tr><td class="CalNextPrev"><a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2019/05/01&#39;);return false;">&lt;</a></td><td align="center">2019年6月</td><td class="CalNextPrev" align="right"><a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2019/07/01&#39;);return false;">&gt;</a></td></tr>
+	</tbody></table></td></tr><tr><th class="CalDayHeader" align="center" abbr="日" scope="col">日</th><th class="CalDayHeader" align="center" abbr="一" scope="col">一</th><th class="CalDayHeader" align="center" abbr="二" scope="col">二</th><th class="CalDayHeader" align="center" abbr="三" scope="col">三</th><th class="CalDayHeader" align="center" abbr="四" scope="col">四</th><th class="CalDayHeader" align="center" abbr="五" scope="col">五</th><th class="CalDayHeader" align="center" abbr="六" scope="col">六</th></tr><tr><td class="CalOtherMonthDay" align="center">26</td><td class="CalOtherMonthDay" align="center">27</td><td class="CalOtherMonthDay" align="center">28</td><td class="CalOtherMonthDay" align="center">29</td><td class="CalOtherMonthDay" align="center">30</td><td class="CalOtherMonthDay" align="center">31</td><td class="CalWeekendDay" align="center">1</td></tr><tr><td class="CalWeekendDay" align="center">2</td><td align="center">3</td><td align="center">4</td><td align="center">5</td><td align="center">6</td><td align="center">7</td><td class="CalWeekendDay" align="center">8</td></tr><tr><td class="CalWeekendDay" align="center">9</td><td align="center">10</td><td align="center">11</td><td align="center">12</td><td class="CalTodayDay" align="center">13</td><td align="center">14</td><td class="CalWeekendDay" align="center">15</td></tr><tr><td class="CalWeekendDay" align="center">16</td><td align="center">17</td><td align="center">18</td><td align="center">19</td><td align="center">20</td><td align="center">21</td><td class="CalWeekendDay" align="center">22</td></tr><tr><td class="CalWeekendDay" align="center">23</td><td align="center">24</td><td align="center">25</td><td align="center">26</td><td align="center">27</td><td align="center">28</td><td class="CalWeekendDay" align="center">29</td></tr><tr><td class="CalWeekendDay" align="center">30</td><td class="CalOtherMonthDay" align="center">1</td><td class="CalOtherMonthDay" align="center">2</td><td class="CalOtherMonthDay" align="center">3</td><td class="CalOtherMonthDay" align="center">4</td><td class="CalOtherMonthDay" align="center">5</td><td class="CalOtherMonthDay" align="center">6</td></tr>
+</tbody></table></div><script type="text/javascript">loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"><div id="sidebar_search" class="sidebar-block"></div><div id="sidebar_shortcut" class="sidebar-block">
+<div class="catListLink">
+<h3 class="catListTitle">常用链接</h3>
+<ul>
+<li><a href="https://www.cnblogs.com/dujishi/p/" title="我的博客的随笔列表">我的随笔</a></li><li><a href="https://www.cnblogs.com/dujishi/MyComments.html" title="我发表过的评论列表">我的评论</a></li><li><a href="https://www.cnblogs.com/dujishi/OtherPosts.html" title="我评论过的随笔列表">我的参与</a></li><li><a href="https://www.cnblogs.com/dujishi/RecentComments.html" title="我的博客的评论列表">最新评论</a></li><li><a href="https://www.cnblogs.com/dujishi/tag/" title="我的博客的标签列表">我的标签</a></li>
+</ul>
+<div id="itemListLin_con" style="display:none;">
+<ul>
+
+</ul>
+</div>
+</div></div><div id="sidebar_toptags" class="sidebar-block"></div><div id="sidebar_categories">
+<div id="sidebar_postarchive" class="catListPostArchive sidebar-block">
+<h3 class="catListTitle">随笔档案</h3>
+
+<ul>
+
+<li><a id="CatList_LinkList_0_Link_0" href="https://www.cnblogs.com/dujishi/archive/2019/03.html">2019年3月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_1" href="https://www.cnblogs.com/dujishi/archive/2018/09.html">2018年9月 (4)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_2" href="https://www.cnblogs.com/dujishi/archive/2018/08.html">2018年8月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_3" href="https://www.cnblogs.com/dujishi/archive/2018/04.html">2018年4月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_4" href="https://www.cnblogs.com/dujishi/archive/2018/02.html">2018年2月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_5" href="https://www.cnblogs.com/dujishi/archive/2018/01.html">2018年1月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_6" href="https://www.cnblogs.com/dujishi/archive/2017/10.html">2017年10月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_7" href="https://www.cnblogs.com/dujishi/archive/2017/02.html">2017年2月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_8" href="https://www.cnblogs.com/dujishi/archive/2017/01.html">2017年1月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_9" href="https://www.cnblogs.com/dujishi/archive/2016/12.html">2016年12月 (2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_10" href="https://www.cnblogs.com/dujishi/archive/2016/09.html">2016年9月 (5)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_11" href="https://www.cnblogs.com/dujishi/archive/2016/08.html">2016年8月 (1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_12" href="https://www.cnblogs.com/dujishi/archive/2016/07.html">2016年7月 (5)</a> </li>
+
+</ul>
+
+</div>
+
+</div><div id="sidebar_recentcomments" class="sidebar-block"><div id="recent_comments_wrap">
+<div class="catListComment">
+<h3 class="catListTitle">最新评论</h3>
+
+	<div id="RecentCommentsBlock"><ul>
+        <li class="recent_comment_title"><a href="https://www.cnblogs.com/dujishi/p/5862911.html#4162705">1. Re:CSS命名规范——BEM思想（非常赞的规范）</a></li>
+        <li class="recent_comment_body">BEM好像更加繁琐，这跟上世纪九十年代的匈牙利有异曲同工之不妙</li>
+        <li class="recent_comment_author">--weiyinfu</li>
+        <li class="recent_comment_title"><a href="https://www.cnblogs.com/dujishi/p/5862911.html#3970105">2. Re:CSS命名规范——BEM思想（非常赞的规范）</a></li>
+        <li class="recent_comment_body">好 赞 正纠结于如何命名类名 神烦这些命名规则</li>
+        <li class="recent_comment_author">--leoooon</li>
+        <li class="recent_comment_title"><a href="https://www.cnblogs.com/dujishi/p/5862911.html#3598470">3. Re:CSS命名规范——BEM思想（非常赞的规范）</a></li>
+        <li class="recent_comment_body">路过~</li>
+        <li class="recent_comment_author">--伴随风飞</li>
+</ul>
+</div>
+</div>
+</div></div></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright ©2019 小草露露
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+
+</body></html>
